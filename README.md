@@ -20,6 +20,13 @@ Empty Contract
 - **Version**: 0.53.0
 </details>
 
+<details>
+<summary>Links</summary>
+
+- **Devnet Deployments**:
+  - **[Shard 1](https://devnet-explorer.elrond.com/address/erd11111)**: erd11111
+</details>
+
 ## Endpoints
 
 ### Deploy

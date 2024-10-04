@@ -1,0 +1,8 @@
+{
+    "devnet": [
+        {
+            "address": "erd11111",
+            "label": "Shard 1"
+        }
+    ]
+}

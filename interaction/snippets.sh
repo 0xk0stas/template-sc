@@ -42,7 +42,7 @@ deploy() {
 
     mxpy contract deploy --bytecode $SC_BYTECODE \
     --recall-nonce --pem $OWNER_PEM \
-    --gas-limit $GAS_LIMIT \
+    --gas-limit $GAS_LIMIT --metadata-payable-by-sc \
     --send --outfile ./reports/deploy.report.json \
     --proxy $PROXY --chain $CHAIN_ID \
     $ARGS
@@ -60,7 +60,7 @@ upgrade() {
     fi
     mxpy contract upgrade $SC_ADDRESS --bytecode $SC_BYTECODE \
     --recall-nonce --pem $OWNER_PEM \
-    --gas-limit $GAS_LIMIT \
+    --gas-limit $GAS_LIMIT --metadata-payable-by-sc \
     --send --outfile ./reports/upgrade.report.json \
     --proxy $PROXY --chain $CHAIN_ID \
     $ARGS
