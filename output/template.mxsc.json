@@ -13,7 +13,7 @@
         },
         "framework": {
             "name": "multiversx-sc",
-            "version": "0.53.0"
+            "version": "0.54.0"
         }
     },
     "abi": {
@@ -50,7 +50,7 @@
             "path": "../output/template.wasm",
             "size": 242,
             "hasAllocator": false,
-            "hasPanic": "none"
+            "hasPanic": "None"
         }
     }
 }
