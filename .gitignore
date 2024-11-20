@@ -9,4 +9,7 @@ interaction/reports/
 *.lock
 .github/*
 .vscode/*
-*.env
+*.env.devnet
+*.env.mainnet
+*.env.testnet
+*.env.local

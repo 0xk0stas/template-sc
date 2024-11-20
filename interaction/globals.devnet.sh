@@ -20,7 +20,7 @@ fi
 
 #=============================== WALLETS ===============================
 
-source $SC_PATH".devnet.env"
+source $SC_PATH".env.devnet"
 
 OWNER_PEM=$MY_PEM
 OWNER_ADDRESS=$(mxpy wallet convert --infile $OWNER_PEM --in-format pem --out-format address-bech32 | sed -n '3p')
