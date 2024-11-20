@@ -24,7 +24,7 @@ Empty Contract
 <summary>Links</summary>
 
 - **Devnet Deployments**:
-  - **[Shard 1](https://devnet-explorer.elrond.com/address/erd11111)**: erd11111
+  - **[SC](https://devnet-explorer.elrond.com/address/)**: 
 </details>
 
 ## Endpoints
