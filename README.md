@@ -17,7 +17,7 @@ Empty Contract
 - **Channel**: Stable
 
 - **Framework**: multiversx-sc
-- **Version**: 0.54.0
+- **Version**: 0.54.3
 </details>
 
 <details>
