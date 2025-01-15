@@ -3,12 +3,6 @@
 # Smart Contract: Template
 
 <details>
-<summary>Documentation</summary>
-
-Empty Contract
-</details>
-
-<details>
 <summary>Build info</summary>
 
 - **Rustc Version**: 1.80.1
@@ -17,14 +11,14 @@ Empty Contract
 - **Channel**: Stable
 
 - **Framework**: multiversx-sc
-- **Version**: 0.54.3
+- **Version**: 0.55.0
 </details>
 
 <details>
 <summary>Links</summary>
 
 - **Devnet Deployments**:
-  - **[SC](https://devnet-explorer.elrond.com/address/)**: 
+  - **[SC](https://devnet-explorer.elrond.com/address/erd1qqqqqqqqqqqqqpgqpv09kfzry5y4sj05udcngesat07umyj70n4sa2c0rp)**: erd1qqqqqqqqqqqqqpgqpv09kfzry5y4sj05udcngesat07umyj70n4sa2c0rp
 </details>
 
 ## Endpoints

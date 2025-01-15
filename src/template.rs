@@ -1,10 +1,9 @@
 #![no_std]
 
+use multiversx_sc::imports::*;
+
 mod proxy;
 
-multiversx_sc::imports!();
-
-/// Empty Contract
 #[multiversx_sc::contract]
 pub trait Template {
     #[init]

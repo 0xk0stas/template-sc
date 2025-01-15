@@ -1,6 +1,4 @@
 view() {
-    # view func_name  OR  view func_name "0xArg1_hex 0xArg2_hex ..."
-    
     if [ -n "$2" ]; then
         mxpy contract query $SC_ADDRESS --proxy $PROXY --function $1 --arguments $2
     else
@@ -9,8 +7,6 @@ view() {
 }
 
 changeOwnerAddress() {
-    # changeOwnerAddress new_owner_address_hex
-
     mxpy tx new \
     --receiver $SC_ADDRESS --recall-nonce --pem $OWNER_PEM \
     --gas-limit 10000000 --outfile ./reports/changeOwnerAddress.report.json \
@@ -20,8 +16,6 @@ changeOwnerAddress() {
 
 
 claimDeveloperRewards() {
-    # claimDeveloperRewards
-
     mxpy tx new \
     --receiver $SC_ADDRESS --recall-nonce --pem $OWNER_PEM \
     --gas-limit 10000000 --outfile ./reports/claimDeveloperRewards.report.json \
@@ -30,8 +24,6 @@ claimDeveloperRewards() {
 }
 
 deploy() {
-    # deploy OR  deploy "0xArg1_hex 0xArg2_hex ..." 50000000
-
     local GAS_LIMIT=${2:-20000000}  # Default gas limit is 20 million
 
     if [ -n "$1" ]; then
@@ -49,8 +41,6 @@ deploy() {
 }
 
 upgrade() {
-    # upgrade OR upgrade "0xArg1_hex 0xArg2_hex ..." 50000000
-
     local GAS_LIMIT=${2:-20000000}  # Default gas limit is 20 million
 
     if [ -n "$1" ]; then
@@ -69,8 +59,6 @@ upgrade() {
 # ======================================================================
 
 runTx() {
-    # runTx receiver_hex EGLD_value endpoint_name "@Arg1_hex@Arg2_hex@...@ArgN_hex" 20000000
-
     local RECEIVER=${1:-$SC_ADDRESS} # Default receiver is the SC address
     local EGLD_VALUE=${2:-0}  # Default EGLD value is 0
     local ENDPOINT_NAME=${3:-""}  # Default endpoint name is empty

@@ -13,12 +13,9 @@
         },
         "framework": {
             "name": "multiversx-sc",
-            "version": "0.54.3"
+            "version": "0.55.0"
         }
     },
-    "docs": [
-        "Empty Contract"
-    ],
     "name": "Template",
     "constructor": {
         "inputs": [],
