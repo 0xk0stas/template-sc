@@ -74,3 +74,20 @@ runTx() {
     --proxy $PROXY --chain $CHAIN_ID \
     --data $ENDPOINT_NAME$ARGUMENTS
 }
+
+simulateTx() {
+    local RECEIVER=${1:-$SC_ADDRESS} # Default receiver is the SC address
+    local EGLD_VALUE=${2:-0}  # Default EGLD value is 0
+    local ENDPOINT_NAME=${3:-""}  # Default endpoint name is empty
+    local ARGUMENTS=${4:-""}  # Default arguments are empty
+    local GAS_LIMIT=${5:-20000000}  # Default gas limit is 20 million
+    local REPORT_FILE=${ENDPOINT_NAME:-"tx"} # Default report file is tx.report.json
+    local OUTFILE="./reports/tx.report.json" # Default outfile is ./reports/tx.report.json
+
+    mxpy tx new \
+    --receiver $RECEIVER --recall-nonce --pem $OWNER_PEM \
+    --gas-limit $GAS_LIMIT --outfile $OUTFILE \
+    --simulate --value $EGLD_VALUE --wait-result \
+    --proxy $PROXY --chain $CHAIN_ID \
+    --data $ENDPOINT_NAME$ARGUMENTS
+}

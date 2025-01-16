@@ -4,7 +4,7 @@ import subprocess
 for i in range(1, len(sys.argv)):
     x = sys.argv[i]
 
-    if x.startswith('00') and len(x) == 64:
+    if len(x) == 64:
         result = subprocess.run(['mxpy', 'wallet', 'bech32', '--encode', x], capture_output=True, text=True)
         x = result.stdout.strip()
     else:
