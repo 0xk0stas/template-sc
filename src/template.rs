@@ -1,8 +1,6 @@
 #![no_std]
 
-use multiversx_sc::imports::*;
-
-mod proxy;
+use multiversx_sc::{derive_imports::*, imports::*};
 
 #[multiversx_sc::contract]
 pub trait Template {
