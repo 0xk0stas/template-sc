@@ -9,10 +9,6 @@ target/**
 /target/
 */target/
 
-# The mxpy output
-# /output*/
-# output/**
-
 # Ignore
 *.pem
 *report.json
