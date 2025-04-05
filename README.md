@@ -5,13 +5,13 @@
 <details>
 <summary>Build info</summary>
 
-- **Rustc Version**: 1.80.1
-- **Commit Hash**: 3f5fd8dd41153bc5fdca9427e9e05be2c767ba23
-- **Commit Date**: 2024-08-06
+- **Rustc Version**: 1.86.0
+- **Commit Hash**: 05f9846f893b09a1be1fc8560e33fc3c815cfecb
+- **Commit Date**: 2025-03-31
 - **Channel**: Stable
 
 - **Framework**: multiversx-sc
-- **Version**: 0.56.1
+- **Version**: 0.57.1
 </details>
 
 <details>
