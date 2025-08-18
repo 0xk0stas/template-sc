@@ -25,11 +25,6 @@ OWNER_PEM=$MY_PEM
 OWNER_ADDRESS=$(mxpy wallet convert --infile $OWNER_PEM --in-format pem --out-format address-bech32 | sed -n '3p')
 OWNER_ADDRESS_HEX=$(mxpy wallet bech32 --decode $OWNER_ADDRESS)
 
-#=============================== ADDRESSES ===============================
-
-WRAPPEDEGLD_ADDRESS="erd1qqqqqqqqqqqqqpgqpv09kfzry5y4sj05udcngesat07umyj70n4sa2c0rp" # shard 1
-WRAPPEDEGLD_ADDRESS_HEX=$(mxpy wallet bech32 --decode $WRAPPEDEGLD_ADDRESS)
-
 #=============================== TOKENS ===============================
 
 EGLD="EGLD"

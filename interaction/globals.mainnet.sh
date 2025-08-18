@@ -13,6 +13,7 @@ SC_BYTECODE=$SC_PATH"output/$SC_NAME.wasm"
 
 source $SC_PATH".env.mainnet"
 
+
 if [ ! -z $SC_ADDRESS ]; then
     SC_ADDRESS_HEX=$(mxpy wallet bech32 --decode $SC_ADDRESS)
 else
@@ -24,11 +25,6 @@ fi
 OWNER_PEM=$MY_PEM
 OWNER_ADDRESS=$(mxpy wallet convert --infile $OWNER_PEM --in-format pem --out-format address-bech32 | sed -n '3p')
 OWNER_ADDRESS_HEX=$(mxpy wallet bech32 --decode $OWNER_ADDRESS)
-
-#=============================== ADDRESSES ===============================
-
-WRAPPEDEGLD_ADDRESS="erd1qqqqqqqqqqqqqpgqhe8t5jewej70zupmh44jurgn29psua5l2jps3ntjj3" # shard 1
-WRAPPEDEGLD_ADDRESS_HEX=$(mxpy wallet bech32 --decode $WRAPPEDEGLD_ADDRESS)
 
 #=============================== TOKENS ===============================
 
